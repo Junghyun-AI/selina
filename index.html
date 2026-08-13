@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>아이토익 필수 단어장 포털</title>
+  <style>
+    :root {
+      --navy: #13233f;
+      --blue: #2f69d9;
+      --sky: #eaf2ff;
+      --mint: #18a985;
+      --red: #df5b66;
+      --ink: #172033;
+      --muted: #6d778b;
+      --line: #dbe2ec;
+      --paper: #fff;
+      --bg: #f3f6fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(145deg, #eef4ff, #fafbfd 52%, #edf8f5);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans KR", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .app {
+      width: min(980px, calc(100% - 28px));
+      margin: 40px auto 48px;
+      flex: 1;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .15em;
+      color: var(--blue);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .title {
+      font-size: clamp(28px, 5vw, 42px);
+      margin: 0;
+      color: var(--navy);
+      letter-spacing: -.04em;
+      font-weight: 820;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .panel {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(209, 219, 233, 0.9);
+      border-radius: 22px;
+      box-shadow: 0 16px 45px rgba(33, 55, 91, 0.09);
+      padding: 28px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-link:hover .panel {
+      transform: translateY(-5px);
+      box-shadow: 0 22px 50px rgba(33, 55, 91, 0.15);
+      border-color: var(--blue);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .badge {
+      background: var(--sky);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 99px;
+      letter-spacing: .05em;
+    }
+    .word-count {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .card-title {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--navy);
+      margin: 0 0 10px 0;
+      letter-spacing: -.02em;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0 0 24px 0;
+    }
+    .btn-start {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 12px 20px;
+      border-radius: 12px;
+      transition: background-color 0.2s ease;
+      width: 100%;
+      text-align: center;
+    }
+    .card-link:hover .btn-start {
+      background: #2154be;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      .app { margin-top: 24px; }
+      .grid { grid-template-columns: 1fr; }
+      .panel { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+<main class="app">
+  <header>
+    <div class="eyebrow">TOEIC VOCABULARY PORTAL</div>
+    <h1 class="title">아이토익 필수 단어장</h1>
+    <p class="subtitle">학습할 단어장 회차를 선택하세요.</p>
+  </header>
+
+  <section class="grid">
+    <!-- Day 41–50 카드 -->
+    <a href="day41-50.html" class="card-link">
+      <article class="panel">
+        <div>
+          <div class="card-header">
+            <span class="badge">DAY 41–50</span>
+            <span class="word-count">총 200단어</span>
+          </div>
+          <h2 class="card-title">Day 41 – Day 50</h2>
+          <p class="card-desc">토익 핵심 필수 어휘 및 항공 전공 어휘 포함 (transmit signal, retire, in advance 등)</p>
+        </div>
+        <div class="btn-start">
+          학습 시작하기 ➔
+        </div>
+      </article>
+    </a>
+
+    <!-- Day 51–60 카드 -->
+    <a href="day51-60.html" class="card-link">
+      <article class="panel">
+        <div>
+          <div class="card-header">
+            <span class="badge">DAY 51–60</span>
+            <span class="word-count">총 200단어</span>
+          </div>
+          <h2 class="card-title">Day 51 – Day 60</h2>
+          <p class="card-desc">토익 실전 어휘 및 기내/항공 서비스 어휘 포함 (aim, profitable, bargain, interior 등)</p>
+        </div>
+        <div class="btn-start">
+          학습 시작하기 ➔
+        </div>
+      </article>
+    </a>
+  </section>
+
+  <footer>
+    학습 진도는 각 페이지별로 브라우저에 자동 저장됩니다.
+  </footer>
+</main>
+</body>
+</html>
